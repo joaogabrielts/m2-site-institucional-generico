@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@charset "UTF-8";
+
 
 
 .header{
@@ -32,6 +34,11 @@ font-weight: var(--text-4-weigth);
 font-size: var(--text-4-size);
 line-height: var(--text-4-line-heigth);
 }
+
+.header__button:hover{
+  cursor: pointer;
+}
+
 .main{
 margin: 0;
 }
@@ -105,7 +112,7 @@ text-align: justify;
 .about__title{
     width: 100%;
     color:var(--gray-6) ;
-    
+    margin: 40px;
     font-weight: var(--title-2-weigth);
    font-size: var(--title-2-size);
    line-height: var(--title-2-line-heigth);
@@ -171,6 +178,9 @@ text-align: justify;
     border: none;
 }
 
+.fraq__button:hover{
+    cursor: pointer;
+}
 
 .fraq__list{
     list-style: none;
@@ -293,4 +303,73 @@ text-align: justify;
  justify-content: center;
  color: var(--gray-6);
  padding: 30px 30px;
+}
+
+.modal{
+    margin: auto;
+    width: 30%;
+}
+
+.modal::backdrop{
+    background-color: var(--gray-1);
+    opacity: 80%;
+}
+
+.modal__content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 30px;
+    background-color: var(--gray-2);
+    font-family: var(--fonte-primary);
+}
+
+.modal__info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.modal__title{
+    color: var(--gray-7);
+    font-weight: var(--title-3-weigth);
+    font-size: var(--title-3-size);
+    line-height: var(--title-3-line-heigth);
+}
+
+.material-symbols-outlined{
+    background-color: var(--gray-3);
+    color:var(--gray-4);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.material-symbols-outlined:hover{
+   cursor: pointer;
+}
+
+.modal__paragraph{
+    font-weight: var(--text-3-weigth);
+    font-size: var(--text-3-size);
+    line-height: var(--text-3-line-heigth); 
+    color: var(--gray-4);
+    text-align: justify;
+}
+
+.modal__input{
+    background-color: var(--gray-1);
+    border: none;
+    padding: 10px;
+}
+
+.modal__button{
+    font-weight: var(--text-4-weigth);
+    font-size: var(--text-4-size);
+    line-height: var(--text-4-line-heigth); 
+    color: var(--gray-7);
+    background-color: var(--brand-1);
+    border: none;
+    padding: 10px;
 }

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Institucional Genérica</title>
     <link rel="stylesheet" href="src/styles/globalStyles.css">
-    <link rel="stylesheet" href="src/styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="src/scripts/index.js" defer></script>
   </head>
   <body>
     <!-- ====== Header ====== -->
@@ -195,6 +196,20 @@
     </footer>
 
     <!-- ====== Modal ====== -->
-    <dialog class="modal"></dialog>
+    <dialog class="modal">
+      <div class="modal__content">
+        <div class="modal__info">
+          <h1 class="modal__title">Cadastro</h1> 
+          <span class="material-symbols-outlined">close</span>
+          </div>
+          <p class="modal__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt sapiente beatae blanditiis nam explicabo atque qui provident aspernatur alias? Quibusdam, sunt dicta tempora dolorem provident eum! Autem iste et reprehenderit?</p>
+
+          <input class="modal__input" type="text" placeholder="Digitar aqui" >
+
+          <button class="modal__button">Entrar na lista para próxima turma </button>
+          
+        
+      </div>
+    </dialog>
   </body>
 </html>
