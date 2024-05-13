@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-@charset "UTF-8";
-
-
-
 .header{
 background-color: var(--gray-1);
 padding: 20px;
@@ -16,7 +12,7 @@ z-index: 1;
 
 .header__container{
  display: flex;
- justify-content: space-around;
+ justify-content: space-between;
  align-items: center
 }
 
@@ -48,7 +44,8 @@ margin: 0;
     color:var(--gray-6);
     background-color: var(--gray-2);
     font-family: var(--fonte-primary);
-  padding: 200px 80px ;
+   
+   padding: 200px 80px ;
 }
 
 
@@ -63,6 +60,7 @@ margin: 0;
 
 
  .Banner__title{
+    text-align: center;
  color:var(--gray-6);
  font-weight: var(--title-1-weigth);
  font-size: var(--title-1-size);
@@ -121,7 +119,9 @@ text-align: justify;
 
 .about__paragraph{
     color: var(--gray-5);
-    font-weight: var(--title-2-weigth);
+    font-weight: var(--text-1-weigth);
+    font-size: var(--text-1-size);
+    line-height: var(--text-1-line-heigth);
     margin-right: 30px;
     text-align: justify;
 }
@@ -139,7 +139,6 @@ text-align: justify;
 .faq__content{
  padding: 100px 100px ;
  display: flex;
-
  width: 100%;
  margin: 0;
  gap: 60px;
@@ -156,7 +155,7 @@ text-align: justify;
  gap: 20px;
 }
 
-.fraq__tile{
+.fraq__title{
     font-weight: var(--title-2-weigth);
    font-size: var(--title-2-size);
    line-height: var(--title-2-line-heigth);
@@ -164,7 +163,9 @@ text-align: justify;
 }
 
 .fraq__paragraph{
-    font-weight: var(--title-2-weigth);
+    font-weight: var(--text-1-weigth);
+    font-size: var(--text-1-size);
+    line-height: var(--text-1-line-heigth);
     color: var(--gray-4);
     text-align: justify;
 }
@@ -208,8 +209,9 @@ text-align: justify;
 
 .fraq__answer{
     color: var(--gray-4);
-    font-weight: var(--title-3-weigth);
-  list-style: var(--text-4-line-heigth);
+    font-weight: var(--text-1-weigth);
+    font-size: var(--text-1-size);
+    line-height: var(--text-1-line-heigth);
   text-align: center;
    
 
@@ -257,7 +259,7 @@ text-align: justify;
     font-weight: var(--text-1-weigth);
     font-size: var(--text-1-size);
     line-height: var(--text-1-line-heigth);
-    color: var(--gray-7);
+    color: var(--gray-5);
 }
 
 
@@ -282,7 +284,6 @@ text-align: justify;
 
 .comments__name{
     color: var(--gray-6);
-    
     font-weight: var(--title-3-weigth);
     font-size: var(--title-3-size);
     line-height: var(--title-3-line-heigth);
@@ -290,11 +291,18 @@ text-align: justify;
 
 .comments__info{
     color: var(--gray-4);
+    font-weight: var(--text-3-weigth);
+    font-size: var(--text-3-size);
+    line-height: var(--text-3-line-heigth);
+
 }
 
 
 .comments__text{
-    color:var(--gray-7);
+    color:var(--gray-5);
+    font-weight: var(--text-3-weigth);
+    font-size: var(--text-3-size);
+    line-height: var(--text-3-line-heigth);
     text-align: justify;
 }
 
@@ -308,7 +316,8 @@ text-align: justify;
 
 .modal{
     margin: auto;
-    width: 30%;
+    width: 25rem;
+    border: 1px solid  var(--brand-1);
 }
 
 .modal::backdrop{
@@ -373,4 +382,193 @@ text-align: justify;
     background-color: var(--brand-1);
     border: none;
     padding: 10px;
+   
+}
+
+@media ( max-width:1024px) {
+
+ .header__logo{
+    width: clamp(6.25rem, 45%, 7.5rem );
+ }   
+
+ .header__button{
+    padding: clamp(0.3rem,-0.310rem + 1.692vw, 0.625rem);
+ }
+
+ .Banner__title{
+  font-size: clamp(1rem,0.71rem + 4.359vw,3.25rem);
+ }
+ 
+ .Banner__destaque{
+    font-size: clamp(1rem,0.71rem + 4.359vw,3.25rem);
+ }
+
+ .Banner__paragraph{
+    font-size: clamp(0.8rem, 0.544rem + 1.026vw, 1.25rem);
+ }
+  
+ .Banner__button{
+    padding: clamp(0.3rem,-0.310rem + 1.692vw, 0.625rem);
+ }
+
+ .about__title{
+   font-size: clamp(1.25rem, 0.449rem + 3.25vw,2.5rem);
+ }
+
+ .about__paragraph{
+    font-size: clamp(0.8rem, 0.544rem + 1.026vw, 1.25rem);
+ }
+
+ .fraq__title{
+    font-size: clamp(1.25rem, 0.449rem + 3.25vw,2.5rem);
+ }
+
+ .fraq__paragraph{
+    font-size: clamp(0.8rem, 0.544rem + 1.026vw, 1.25rem);
+ }
+
+ .fraq__question{
+    font-size: clamp(1.2rem, 0.249rem + 2.2vw, 2rem);
+ }
+
+ .fraq__answer{
+    font-size: clamp(0.8rem, 0.544rem + 1.026vw, 1.25rem);
+ }
+
+ .Comments__content--right{
+    padding: clamp(0.8rem,-0.610rem + 4.692vw, 1.25rem);
+ }
+
+ .Comments__title{
+    font-size: clamp(1.25rem, 0.449rem + 3.25vw,2.5rem);
+ }
+
+ .comments__paragraph{
+    font-size: clamp(0.8rem, 0.544rem + 1.026vw, 1.25rem);
+ }
+
+ .comments__name{
+    font-size: clamp(1.2rem, 0.249rem + 2.2vw, 2rem);
+ }
+ .comments__info{
+    font-size: clamp(0.45rem, 0.345rem + 960vw, 1rem);
+ }
+ .comments__text{
+    font-size: clamp(0.45rem, 0.345rem + 960vw, 1rem);
+ }
+
+ .modal__title{
+    font-size: clamp(1.2rem, 0.249rem + 2.2vw, 2rem);
+ }
+ .modal__paragraph{
+    font-size: clamp(0.45rem, 0.345rem + 960vw, 1rem);
+    text-align: center;
+ }
+ .modal__button{
+    padding: clamp(0.3rem,-0.310rem + 1.692vw, 0.625rem);
+ }
+}
+
+
+@media(max-width:768px){
+ .Banner{
+    padding: clamp(30px, 5vw, 40px) 10px
+ }
+  .about{
+    padding: clamp(30px, 5vw, 40px) 10px
+  }
+    .about__content{
+        flex-direction: column;
+    }
+
+    .about__title{
+        text-align: center;
+    }
+ .faq__content{
+    padding: clamp(30px, 5vw, 40px) 10px;
+  flex-direction: column;  
+  align-items: center;
+  
+ }   
+
+ .faq__content--left{
+    align-items: center;
+ }
+ .fraq__button{
+    width: 100%;
+    padding: clamp(0.3rem,-0.310rem + 1.692vw, 0.625rem);
+ }
+  .fraq__question{
+    text-align: center;
+  }
+
+  .fraq__list{
+    width: 100%;
+  }
+
+  .fraq__paragraph{
+    text-align: justify;
+  }
+  .Comments{
+    width: 100%;
+    padding: 10px;
+  }
+
+.Comments__content{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+  .Comments__content--right{
+    padding: clamp(2rem,0.91rem + 4.359vw,5.25rem);
+
+  }
+  
+  .comments__item{
+    flex-direction: column;
+    gap:15px ;
+  }
+  .comments__user{
+    display: flex;
+   align-items: center;
+   gap: 10px;
+  }
+}
+
+@media(max-width:425px){
+    .header__button{
+        display: none;
+    }
+
+    .Banner{
+        padding: clamp(2rem,0.91rem + 4.359vw,5.25rem);
+    }
+    .Banner__button{
+        padding: clamp(0.8rem,-0.610rem + 4.692vw, 1.25rem);
+    }
+
+    .about{
+        padding: clamp(30px, 5vw, 40px) 10px
+    }
+
+    .about__content{
+        flex-direction: column;
+    }
+
+    .about__title{
+        text-align: center;
+    }
+
+    .fraq__button{
+        padding: clamp(1.4rem,0.81rem + 2.359vw,4.25rem);
+    }
+
+    .Comments__content--right{
+        padding: clamp(2.1rem,1.5rem + 9.359vw, 7.25rem);
+    }
+
 }
