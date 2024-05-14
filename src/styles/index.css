@@ -316,6 +316,7 @@ text-align: justify;
 
 .modal{
     margin: auto;
+    width: 500px;
     border: 1px solid  var(--brand-1);
 }
 
