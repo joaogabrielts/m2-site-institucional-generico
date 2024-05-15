@@ -611,6 +611,9 @@
    .Comments__content--right{
     padding: clamp(2.1rem,1.5rem + 9.359vw, 7.25rem);
     }
+    .comments__text {
+        width: 100%;
+    }
 
 }
 
