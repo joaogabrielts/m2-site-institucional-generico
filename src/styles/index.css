@@ -155,7 +155,7 @@
     flex-wrap: wrap;
     position: sticky; 
      top: 6rem; 
-     width: 80%;
+     
     gap: 20px;
     }
 
@@ -171,6 +171,7 @@
         font-size: var(--text-1-size);
         line-height: var(--text-1-line-heigth);
         color: var(--gray-4);
+        width: 80%;
         text-align: justify;
     }
 
@@ -502,7 +503,7 @@
     }   
 
     .faq__content--left{
-        width: 90%;
+        width: 100%;
         align-items: center;
     }
     .fraq__button{
