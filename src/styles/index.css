@@ -7,13 +7,15 @@
     position: sticky; 
     top: 0; 
     z-index: 1; 
-
+    border-bottom: 2px solid var(--brand-1);
     }
 
     .header__container{
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
     }
 
     .header__logo{
@@ -41,11 +43,11 @@
 
 
     .Banner{
+        width: 100%;
         color:var(--gray-6);
         background-color: var(--gray-2);
         font-family: var(--fonte-primary);
-    
-    padding: 200px 80px ;
+         padding: 200px 80px ;
     }
 
 
@@ -60,7 +62,7 @@
 
 
     .Banner__title{
-        text-align: center;
+    text-align: center;
     color:var(--gray-6);
     font-weight: var(--title-1-weigth);
     font-size: var(--title-1-size);
@@ -73,10 +75,10 @@
     font-weight: var(--title-1-weigth);
     font-size: var(--title-1-size);
     line-height: var(--title-1-line-heigth);
-    text-align: justify;
     }
 
     .Banner__paragraph{
+        width: 80%;
         color: var(--gray-4);
         font-weight: var(--text-1-weigth);
         font-size: var(--text-1-size);
@@ -137,7 +139,7 @@
 
 
     .faq__content{
-    padding: 100px 100px ;
+    padding: 100px 30px 100px 30px ;
     display: flex;
     width: 100%;
     margin: 0;
@@ -147,11 +149,13 @@
 
 
     .faq__content--left{
+    padding-left:60px ;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     position: sticky; 
-        top: 6rem; 
+     top: 6rem; 
+     width: 80%;
     gap: 20px;
     }
 
@@ -186,7 +190,7 @@
 
     .fraq__list{
         list-style: none;
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -200,6 +204,7 @@
     }
 
     .fraq__question{
+        align-items: center;
         font-weight: var(--title-3-weigth);
         font-size: var(--title-3-size);
         line-height: var(--title-3-line-heigth);
@@ -221,7 +226,7 @@
         font-family: var(--fonte-primary);
         background-color: var(--gray-2);
         width: 100%;
-        padding: 100px 100px;
+        padding: 80px 10px;
     }
 
 
@@ -229,7 +234,7 @@
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
-        gap: 40px;
+        gap: 30px;
     }
 
     .Comments__content--right{
@@ -267,7 +272,7 @@
         list-style: none;
         display: flex;
         flex-direction: column;
-        gap:30px;
+        gap:20px;
     }
 
     .comments__item{
