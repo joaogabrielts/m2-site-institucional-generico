@@ -582,7 +582,6 @@
         padding: clamp(1.4rem,0.81rem + 2.359vw,4.25rem);
     }
     .faq__content--left {
-        width: 83%;
         align-items: center;
     }
 }
