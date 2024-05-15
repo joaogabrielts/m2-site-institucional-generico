@@ -235,18 +235,21 @@
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
-        gap: 30px;
+       gap: 30px;
     }
 
+    
+
     .Comments__content--right{
-        padding: 20px 20px;
         display: flex;
+        padding: 70px 70px;
         flex-direction: column;
         flex-wrap: wrap;
         background-color:var(--brand-1) ;
         position: sticky; 
         top: 6rem; 
-        width: 100%;
+        gap: 10px;
+       
         
     }
 
@@ -266,6 +269,7 @@
         font-size: var(--text-1-size);
         line-height: var(--text-1-line-heigth);
         color: var(--gray-5);
+        text-align: justify;
     }
 
 
@@ -273,19 +277,19 @@
         list-style: none;
         display: flex;
         flex-direction: column;
-        gap:20px;
+      gap: 20px;
     }
 
     .comments__item{
         display: flex;
-        align-items: center;
         width: 100%;
-    gap:30px ;
+       
     }
 
 
     .comments__user{
-        width: 100%;
+        width: 40%;
+        margin-left: 20px;
     }
 
     .comments__name{
@@ -310,6 +314,8 @@
         font-size: var(--text-3-size);
         line-height: var(--text-3-line-heigth);
         text-align: justify;
+        width: 90%;
+        margin-right: 20px;
     }
 
     .footer{
@@ -453,6 +459,17 @@
     .comments__paragraph{
         font-size: clamp(0.8rem, 0.544rem + 1.026vw, 1.25rem);
     }
+    .comments__item{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .comments__user{
+       display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
 
     .comments__name{
         font-size: clamp(1.2rem, 0.249rem + 2.2vw, 2rem);
@@ -550,9 +567,10 @@
         gap:15px ;
     }
     .comments__user{
-        display: flex;
+    display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
     }
 }
 
@@ -589,9 +607,12 @@
     .faq__content--left {
         align-items: center;
     }
+
+   .Comments__content--right{
+    padding: clamp(2.1rem,1.5rem + 9.359vw, 7.25rem);
+    }
+
 }
 
-    .Comments__content--right{
-        padding: clamp(2.1rem,1.5rem + 9.359vw, 7.25rem);
-    }
+ 
 
