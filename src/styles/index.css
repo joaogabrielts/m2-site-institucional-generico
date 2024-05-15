@@ -493,6 +493,7 @@
     
     .about__paragraph{
             text-align: center;
+            
     }
 
     .faq__content{
@@ -504,6 +505,7 @@
 
     .faq__content--left{
         width: 100%;
+        padding: 0px;
         align-items: center;
     }
     .fraq__button{
@@ -520,6 +522,7 @@
 
     .fraq__paragraph{
         text-align: justify;
+        width: 100%;
     }
     .Comments{
         width: 100%;
