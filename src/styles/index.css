@@ -78,7 +78,7 @@
     }
 
     .Banner__paragraph{
-        width: 80%;
+        width: 70%;
         color: var(--gray-4);
         font-weight: var(--text-1-weigth);
         font-size: var(--text-1-size);
