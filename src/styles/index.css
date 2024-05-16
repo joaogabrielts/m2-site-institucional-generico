@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+     
     .header{
     background-color: var(--gray-1);
     padding: 20px;
@@ -228,13 +228,15 @@
         background-color: var(--gray-2);
         width: 100%;
         padding: 80px 10px;
+        display: flex;
+        justify-content: center;
     }
 
 
     .Comments__content{
         display: flex;
         flex-direction: row-reverse;
-        width: 100%;
+        width: 90%;
        gap: 30px;
     }
 
@@ -242,7 +244,7 @@
 
     .Comments__content--right{
         display: flex;
-        padding: 70px 70px;
+        padding: 50px 50px;
         flex-direction: column;
         flex-wrap: wrap;
         background-color:var(--brand-1) ;
@@ -288,7 +290,7 @@
 
 
     .comments__user{
-        width: 40%;
+        width: 50%;
         margin-left: 20px;
     }
 
@@ -396,9 +398,14 @@
         padding: 10px;
     
 }
+@media (min-width:1250px) {
+    body{
+        background-color: var(--gray-2)
+    }
+}
 
 @media ( max-width:1024px) {
-
+   
     .header__logo{
         width: clamp(6.25rem, 45%, 7.5rem );
     }   
