@@ -512,10 +512,7 @@
 
 
 @media(max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
-    
+   
     .Banner{
         padding: clamp(30px, 5vw, 40px) 10px
     }
@@ -593,15 +590,22 @@
     gap: 10px;
     width: 100%;
     }
+    .comments__text{
+        width: 100%;
+    }
 }
 
 @media(max-width:425px){
-    body{
-        overflow-x: hidden;
+ 
+    .header{
+        width: 100%;
     }
     
     .header__button{
         display: none;
+    }
+    .main{
+        width: 100%;
     }
 
     .Banner{
@@ -639,7 +643,9 @@
     .comments__text {
         width: 100%;
     }
-
+   .footer{
+    width: 100%;
+   }
 }
 
  
