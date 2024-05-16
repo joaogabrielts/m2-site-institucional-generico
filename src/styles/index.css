@@ -397,7 +397,7 @@
         padding: 10px;
     
 }
-@media (min-width:1250px) {
+@media (min-width:1256px) {
     body{
         background-color: var(--gray-2)
     }
@@ -412,10 +412,9 @@
     }
 }
 
-@media ( max-width:1024px) {
-   
+@media ( max-width:1024px) { 
     body{
-        margin: auto;
+        overflow-x: hidden;
     }
     .header__logo{
         width: clamp(6.25rem, 45%, 7.5rem );
@@ -514,8 +513,9 @@
 
 @media(max-width:768px){
     body{
-        margin: auto;
+        overflow-x: hidden;
     }
+    
     .Banner{
         padding: clamp(30px, 5vw, 40px) 10px
     }
@@ -597,8 +597,9 @@
 
 @media(max-width:425px){
     body{
-        margin: auto;
+        overflow-x: hidden;
     }
+    
     .header__button{
         display: none;
     }
