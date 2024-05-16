@@ -45,9 +45,11 @@
 --text-4-line-heigth:150%;
 }
 
+
+
 body{
     max-width: 1256px;
-    margin: auto;
+    background-color:var(--gray-2);
   
 }
 

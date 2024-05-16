@@ -3,7 +3,6 @@
     .header{
     background-color: var(--gray-1);
     padding: 20px;
-    width: 100%;
     position: sticky; 
     top: 0; 
     z-index: 1; 
@@ -38,7 +37,7 @@
     }
 
     .main{
-    margin: 0;
+   margin: 0;
     }
 
 
@@ -402,10 +401,22 @@
     body{
         background-color: var(--gray-2)
     }
+    .header{
+        width: 84.3em;
+    }
+    .main{
+        width: 84.3em;
+    }
+    .footer{
+        width: 84.3em;
+    }
 }
 
 @media ( max-width:1024px) {
    
+    body{
+        margin: auto;
+    }
     .header__logo{
         width: clamp(6.25rem, 45%, 7.5rem );
     }   
@@ -502,6 +513,9 @@
 
 
 @media(max-width:768px){
+    body{
+        margin: auto;
+    }
     .Banner{
         padding: clamp(30px, 5vw, 40px) 10px
     }
@@ -582,6 +596,9 @@
 }
 
 @media(max-width:425px){
+    body{
+        margin: auto;
+    }
     .header__button{
         display: none;
     }
