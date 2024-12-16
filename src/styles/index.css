@@ -512,6 +512,9 @@
 
 
 @media(max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
    
     .Banner{
         padding: clamp(30px, 5vw, 40px) 10px
